@@ -5,10 +5,14 @@ const app = express();
 const path = require("path");
 
 const publicPath = path.resolve(__dirname, "./public");
-
 app.use(express.static(publicPath));
 
-app.listen(3000, () => console.log ('servidor corriendo'));
+
+const PORT = 3020; 
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto http://localhost:${PORT}`);
+});
+
 
 // Para mi LocalHost
 app.get("/", (req, res) => res.sendFile(path.join(__dirname, "/views/home.html")));
