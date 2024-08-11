@@ -7,8 +7,10 @@
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node --watch app.js"
-  },
+  "start": "node --watch app.js",
+  "build": "echo 'No hay un proceso de construcción definido.'",
+  "vercel": "vercel"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

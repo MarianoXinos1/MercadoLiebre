@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href= "/css/register.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+    <header>
+       
+        <section class="header__section">
+            <div class="header__logo-barra">
+                <a href="/views/home.html">
+                    <img src="/images/logo-mercado-liebre.svg" alt="logooooo" class="logo">
+                </a>
+                 <input class="barraBusqueda"
+                    type="text" 
+                    name="barraBusqueda"
+                    placeholder="Buscar Productos, marcas "  > 
+            </div>   
+           
+
+            <p class="header__titulo"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+
+        </section>  
+           
+
+            <nav class="navbar">
+                 <ul class="navbar__menu">
+                    <li class="navbar__item"> <a href="#">Ofertas</a> </li>
+                    <li class="navbar__item"> <a href="#">Tiendas Oficiales</a> </li>
+                    <li class="navbar__item"> <a href="#">Vender</a> </li>
+                    <li class="navbar__item"> <a href="#">Ayuda</a> </li>
+                 </ul>
+
+                <ul class="navbar__menu">
+                    <li class="navbar__item"> <a href="/views/register.html">Creá tu cuenta</a>  <i class="fa-solid fa-circle-user"></i> </li> 
+                    <li class="navbar__item"> <a href="/views/login.html">Ingresá</a> <i class="fa-solid fa-address-card"></i> </li>
+                    <li class="navbar__item"> <a href="#">Mis compras</a> <i class="fa-solid fa-cart-shopping"></i> </li>
+                </ul>
+            </nav>
+
+            <div class="burguer-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+    </header>
+
+<main>
+    <div class="formulario__registro" >
+
+        <h2>Registro de Usuario</h2>
+
+            <form class="registro__form" action="/register" method="POST">
+
+                <div class="info__formulario__registro">
+                    <label>  
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido" class="info__barra" required>
+                    </label>
+                </div>
+
+                <div class="info__formulario__registro">
+                    <label> 
+                        <input type="text" name="usuario" placeholder="Nombre de Usuario" class="info__barra" required>
+                    </label>
+                </div>
+
+                <div class="info__formulario__registro">
+                    <label>  
+                        <input type="email" name="email" placeholder="E-mail" class="info__barra" required>
+                    </label>
+                </div>
+
+                <div class="info__formulario__registro">
+                    <h4 class="formulario__tituloH4"> Fecha de nacimiento:  </h4>
+                        <input type="date" name="fecha-nacimiento" class="info__calendario" required>
+                    
+                </div>
+
+                <div class="info__formulario__registro">
+                    <label > 
+                        <input type="text" name="domicilio" placeholder="Domiciliio" class="formulario__domicilio" required>
+                    </label>
+                </div>
+
+                <div class="info__formulario__registro">
+                    <h4 class="formulario__tituloH4"> Perfil del Usuario: </h4>
+                    <label> Comprar
+                        <input type="radio" name="perfil-usuario" value="Comprar" class="info__perfilUsuario" >
+                        
+                    </label>
+                    <label> Vender
+                        <input type="radio" name="perfil-usuario" value="Vender" class="info__perfilUsuario">
+                        
+                    </label>     
+                </div>
+            
+                <div class="info__formulario__registro">
+                    <h4 class="formulario__tituloH4">Categorias de Interes</h4>
+
+                    <div>
+                        <label>Electro
+                            <input type="checkbox" name="categoria-interes" value="electro" class="formulario__checkbox">
+                        </label>
+                    </div> 
+
+                    <div>
+                        <label> Moda 
+                            <input type="checkbox" name="categoria-interes"" value="moda" class="formulario__checkbox">
+                        </label>
+                    </div> 
+
+                    <div>
+                        <label> Hogar 
+                            <input type="checkbox" name="categoria-interes"" value="hogar" class="formulario__checkbox">
+                        </label>
+                    </div> 
+
+                    <div>
+                        <label> Jugueteria 
+                            <input type="checkbox" name="categoria-interes"" value="jugueteria" class="formulario__checkbox">
+                        </label>
+                    </div> 
+
+                    <div>
+                        <label> Vida Sana 
+                            <input type="checkbox" name="categoria-interes"" value="vida sana" class="formulario__checkbox">
+                        </label>
+                    </div> 
+
+                </div>
+
+                <div class="info__formulario__registro">
+                    <h4 class="formulario__tituloH5"> Foto de Usuario: </h4>
+                    <input type="file" name="foto-usuario" class="info__file">
+                </div>
+                
+                <div class="info__formulario__registro">
+                    <label> 
+                        <input type="password" name="password" placeholder="Contraseña" class="info__barra" required>
+                    </label>
+                </div>
+
+                <div class="info__formulario__registro">
+                    <label> 
+                        <input type="password" name="confirmar-password" placeholder="Confirmar Contraseña" class="info__barra" required>
+                    </label>
+                </div>
+
+                <div class="info__formulario__registro">
+                    <button class="boton" type="button" onclick="location.href='/views/home.html';">
+                        <span>Enviar</span>
+                    </button>
+                    <br>
+                    <button type="reset" class="button"> <span>  Borrar </span> </button> 
+                </div>
+            </form>
+    </div>  
+    
+</main>   
+
+    <footer>
+        <section class=" pagos-footer">
+            <i class="fa-regular fa-credit-card"></i>
+            <p class="pagos__titulo"><strong>Pagá con tarjeta o en efectivo</strong></p>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+            <br>
+
+         <section class="envio-footer">
+            <i class="fa-solid fa-truck-fast"></i>
+            <p class="envio__titulo" > <strong>Envío gratis desde $ 2.500</strong></p>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+
+            <br>
+
+        <section class="devolucion-footer">
+            <i class="fa-solid fa-shield"></i>
+            <p class="devolucion__titulo"><strong>Seguridad, de principio a fin</strong></p>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+         </section>
+            <br>
+
+            <section class="Copyright__footer">
+                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+           </section>
+    </footer>
+
+</body>
+
+</html>
